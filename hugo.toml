@@ -1,0 +1,16 @@
+baseURL = 'https://taco.holdings/'
+languageCode = 'en-us'
+title = 'Taco.holdings'
+theme = 'maverick'
+
+[menu]
+  [[menu.main]]
+    identifier = "oss-projects"
+    name = "OSS Projects"
+    url = "/oss-projects/"
+    weight = "-200"
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = -100
