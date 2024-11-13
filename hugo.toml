@@ -10,7 +10,7 @@ theme = 'maverick'
   [[menu.main]]
     identifier = "oss-projects"
     name = "OSS Projects"
-    url = "/pages/oss-projects/"
+    url = "/open-source-projects"
     weight = "-200"
   [[menu.main]]
     identifier = "posts"

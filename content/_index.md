@@ -6,4 +6,4 @@ title = 'Greg.Engineering'
 
 My name is Greg Haynes, and I'm a Software Engineer living in the Pacific Northwest.
 
-I've participated in developing a few [Open Source projects](pages/oss-projects), mostly related to Cloud and Internal Developer Platforms.
+I've participated in developing a few [Open Source projects](/open-source-projects), mostly related to Cloud and Internal Developer Platforms.
