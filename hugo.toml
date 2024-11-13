@@ -3,11 +3,14 @@ languageCode = 'en-us'
 title = 'Taco.holdings'
 theme = 'maverick'
 
+[permalinks]
+  pages = "/:slug"
+
 [menu]
   [[menu.main]]
     identifier = "oss-projects"
     name = "OSS Projects"
-    url = "/oss-projects/"
+    url = "/pages/oss-projects/"
     weight = "-200"
   [[menu.main]]
     identifier = "posts"
