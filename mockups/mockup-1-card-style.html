@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco.holdings - Card Style Mockup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 3rem;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .nav a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .nav a:hover {
+            color: #764ba2;
+        }
+        
+        .content {
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .content p {
+            margin-bottom: 1rem;
+        }
+        
+        .content a {
+            color: #667eea;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        .content a:hover {
+            border-bottom-color: #667eea;
+        }
+        
+        .projects {
+            margin-top: 2rem;
+        }
+        
+        .projects h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .projects ul {
+            list-style: none;
+        }
+        
+        .projects li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .projects li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .projects a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .projects a:hover {
+            color: #764ba2;
+        }
+        
+        .footer {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #999;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <div class="logo">Taco.holdings</div>
+            <div class="tagline">Greg Haynes - Software Engineer</div>
+        </div>
+        
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#projects">OSS Projects</a>
+            <a href="#posts">Posts</a>
+        </nav>
+        
+        <div class="content">
+            <p>My name is Greg Haynes, and I'm a Software Engineer living in the Pacific Northwest.</p>
+            <p>I've participated in developing a few <a href="#projects">Open Source projects</a>, mostly related to Cloud and Internal Developer Platforms.</p>
+        </div>
+        
+        <div class="projects">
+            <h2>Open Source Projects</h2>
+            <p>Some of the Open Source projects I've made significant contributions to:</p>
+            <ul>
+                <li><a href="https://github.com/cnoe-io/idpbuilder">idpbuilder</a></li>
+                <li><a href="https://knative.dev/docs/">Knative</a></li>
+                <li><a href="https://www.openstack.org/">OpenStack</a></li>
+                <li><a href="https://github.com/openstack/diskimage-builder">diskimage-builder</a></li>
+                <li><a href="https://github.com/greghaynes/xsbs">Extensible Sauerbraten Server</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            Mockup 1: Card-Style Layout
+        </div>
+    </div>
+</body>
+</html>

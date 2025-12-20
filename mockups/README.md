@@ -1,0 +1,138 @@
+# Alternative Website Mockups for Taco.holdings
+
+This directory contains three simple alternative design mockups for the taco.holdings website. Each mockup is a standalone HTML file that can be opened directly in a browser.
+
+## Mockups
+
+### Mockup 1: Card-Style Layout
+**File:** `mockup-1-card-style.html`
+
+A modern centered card design with:
+- Gradient background (purple/blue)
+- White card container with rounded corners
+- Clean typography and spacing
+- Centered content with clear hierarchy
+- Hover effects on links
+
+**Design Approach:** Friendly and approachable, focuses attention on the content within the card.
+
+### Mockup 2: Split-Screen Layout
+**File:** `mockup-2-split-screen.html`
+
+A contemporary two-column split design with:
+- Dark left panel with branding and navigation
+- Light right panel with content
+- Clear visual separation
+- Responsive design that stacks on mobile
+- Card-based project listings
+
+**Design Approach:** Professional and organized, provides persistent navigation while browsing content.
+
+### Mockup 3: Terminal-Style Layout
+**File:** `mockup-3-terminal.html`
+
+A developer-focused terminal interface with:
+- Dark background with green terminal text
+- Terminal window aesthetics
+- Command-line style content presentation
+- Blinking cursor animation
+- Monospace font throughout
+
+**Design Approach:** Playful and technical, appeals to developer audience with familiar terminal aesthetics.
+
+#### Terminal Variations
+
+**Mockup 3a: Amber Terminal** (`mockup-3a-terminal-amber.html`)
+- Classic amber monochrome terminal (orange/brown tones)
+- Vintage 1970s-80s computer aesthetic
+- Warm, retro feel with glowing text effects
+
+**Mockup 3b: Matrix Terminal** (`mockup-3b-terminal-matrix.html`)
+- Enhanced Matrix-style green with stronger glow effects
+- Sharp borders and intense text shadows
+- Cyber/hacker aesthetic
+
+**Mockup 3c: DOS Terminal** (`mockup-3c-terminal-dos.html`)
+- Retro DOS/blue-screen aesthetic
+- Blue background with cyan text
+- DOS-style commands (TYPE, DIR instead of cat, ls)
+- Double-line borders for classic PC look
+
+### Mockup 4: Clean Linux-Style Terminals
+Modern, clean terminal designs inspired by Linux distributions with both light and dark modes.
+
+**Mockup 4: Clean Terminal Dark** (`mockup-4-terminal-clean-dark.html`)
+- VS Code-inspired dark theme
+- Clean, readable design
+- Professional Linux-style prompt (user@host:~$)
+- Tree-style list markers (├─ └─)
+
+**Mockup 4a: Clean Terminal Light** (`mockup-4a-terminal-clean-light.html`)
+- Light theme with excellent readability
+- GNOME Terminal color palette
+- Same clean design as dark variant
+- Professional appearance
+
+**Mockup 4b: Minimal Terminal Dark** (`mockup-4b-terminal-minimal-dark.html`)
+- Ubuntu purple theme
+- Minimal, distraction-free design
+- Simple bullet-point lists
+- Warm purple background
+
+**Mockup 4c: Minimal Terminal Light** (`mockup-4c-terminal-minimal-light.html`)
+- Modern GNOME light theme
+- Clean white background
+- Green accent colors
+- Simple and elegant
+
+## How to View
+
+### Option 1: Open Directly in Browser
+Simply open any of the HTML files in your web browser:
+```bash
+# On macOS
+open mockup-1-card-style.html
+
+# On Linux
+xdg-open mockup-1-card-style.html
+
+# On Windows
+start mockup-1-card-style.html
+```
+
+### Option 2: Use a Simple Web Server
+For the best experience, serve the files with a local web server:
+
+```bash
+# Using Python 3
+python3 -m http.server 8000
+
+# Using Python 2
+python -m SimpleHTTPServer 8000
+
+# Using Node.js (if you have http-server installed)
+npx http-server
+```
+
+Then open `http://localhost:8000/mockup-1-card-style.html` (or the appropriate port) in your browser.
+
+## Comparison with Current Site
+
+The current site uses the Maverick theme with:
+- Minimalist design
+- Cream background (#fffdfa)
+- Bricolage Grotesque font
+- Simple horizontal navigation
+- Maximum width of 70 characters
+
+These mockups explore alternative approaches while maintaining simplicity:
+1. **Card-Style**: Adds visual interest with gradients and card shadows
+2. **Split-Screen**: Provides better content organization with persistent navigation
+3. **Terminal-Style**: Creates a unique, memorable developer-centric experience
+
+## Next Steps
+
+To implement any of these designs in the Hugo site:
+1. The styles could be adapted to replace the current theme's SCSS
+2. The HTML structure could be integrated into Hugo templates
+3. Colors, fonts, and spacing can be adjusted to match branding preferences
