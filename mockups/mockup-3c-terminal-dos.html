@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco.holdings - Terminal Style (DOS)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #000080;
+            color: #00ffff;
+            min-height: 100vh;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        
+        .terminal {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #000080;
+            border: 4px double #00ffff;
+            border-radius: 0;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+        }
+        
+        .terminal-header {
+            background: #00007f;
+            padding: 0.5rem 1rem;
+            border-bottom: 2px solid #00ffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .terminal-title {
+            color: #ffffff;
+            font-size: 0.9rem;
+            text-align: center;
+            flex: 1;
+        }
+        
+        .terminal-body {
+            padding: 2rem;
+        }
+        
+        .prompt {
+            color: #00ffff;
+            margin-bottom: 0.5rem;
+        }
+        
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 18px;
+            background: #00ffff;
+            animation: blink 0.5s infinite;
+            margin-left: 2px;
+        }
+        
+        @keyframes blink {
+            0%, 49% { opacity: 1; }
+            50%, 100% { opacity: 0; }
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            .cursor {
+                animation: none;
+                opacity: 1;
+            }
+        }
+        
+        .output {
+            color: #aaaaaa;
+            margin-bottom: 2rem;
+        }
+        
+        .command {
+            margin-bottom: 2rem;
+        }
+        
+        .command-line {
+            display: flex;
+            margin-bottom: 0.5rem;
+        }
+        
+        .prompt-symbol {
+            color: #00ffff;
+            margin-right: 0.5rem;
+        }
+        
+        .cmd-text {
+            color: #ffff00;
+        }
+        
+        h1, h2 {
+            color: #ffffff;
+            font-weight: normal;
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            color: #ffff00;
+            text-decoration: underline;
+            position: relative;
+        }
+        
+        a:hover {
+            color: #ffffff;
+            background: #00ffff;
+            text-decoration: none;
+        }
+        
+        ul {
+            list-style: none;
+            margin-left: 2rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        li:before {
+            content: '* ';
+            color: #00ffff;
+            margin-left: -1.5rem;
+            position: absolute;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .info {
+            color: #aaaaaa;
+        }
+        
+        .highlight {
+            color: #ffffff;
+            background: #00ffff;
+            padding: 2px 4px;
+        }
+        
+        .footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 2px solid #00ffff;
+            color: #0088aa;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+        
+        .box-char {
+            color: #00ffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="terminal-title">╔══════════════ TACO.HOLDINGS ══════════════╗</div>
+        </div>
+        
+        <div class="terminal-body">
+            <div class="command">
+                <div class="command-line">
+                    <span class="prompt-symbol">C:\></span>
+                    <span class="cmd-text">TYPE WELCOME.TXT</span>
+                </div>
+                <div class="output">
+                    <p class="highlight">TACO.HOLDINGS</p>
+                    <p class="info">Greg Haynes - Software Engineer</p>
+                    <p class="info">Pacific Northwest</p>
+                </div>
+            </div>
+            
+            <div class="command">
+                <div class="command-line">
+                    <span class="prompt-symbol">C:\></span>
+                    <span class="cmd-text">TYPE ABOUT.TXT</span>
+                </div>
+                <div class="output">
+                    <p>My name is Greg Haynes, and I'm a Software Engineer living in the Pacific Northwest.</p>
+                    <p>I've participated in developing a few <a href="#projects">Open Source projects</a>, mostly related to Cloud and Internal Developer Platforms.</p>
+                </div>
+            </div>
+            
+            <div class="command">
+                <div class="command-line">
+                    <span class="prompt-symbol">C:\></span>
+                    <span class="cmd-text">DIR PROJECTS</span>
+                </div>
+                <div class="output">
+                    <p class="info">Some of the Open Source projects I've made significant contributions to:</p>
+                    <ul>
+                        <li><a href="https://github.com/cnoe-io/idpbuilder">idpbuilder</a></li>
+                        <li><a href="https://knative.dev/docs/">Knative</a></li>
+                        <li><a href="https://www.openstack.org/">OpenStack</a></li>
+                        <li><a href="https://github.com/openstack/diskimage-builder">diskimage-builder</a></li>
+                        <li><a href="https://github.com/greghaynes/xsbs">Extensible Sauerbraten Server</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="command">
+                <div class="command-line">
+                    <span class="prompt-symbol">C:\></span>
+                    <span class="cmd-text">DIR NAVIGATE</span>
+                </div>
+                <div class="output">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#projects">OSS Projects</a></li>
+                        <li><a href="#posts">Posts</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="prompt">
+                <span class="prompt-symbol">C:\></span>
+                <span class="cursor"></span>
+            </div>
+            
+            <div class="footer">
+                Mockup 3c: Terminal-Style (DOS)
+            </div>
+        </div>
+    </div>
+</body>
+</html>

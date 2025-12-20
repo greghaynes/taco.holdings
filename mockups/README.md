@@ -40,6 +40,24 @@ A developer-focused terminal interface with:
 
 **Design Approach:** Playful and technical, appeals to developer audience with familiar terminal aesthetics.
 
+#### Terminal Variations
+
+**Mockup 3a: Amber Terminal** (`mockup-3a-terminal-amber.html`)
+- Classic amber monochrome terminal (orange/brown tones)
+- Vintage 1970s-80s computer aesthetic
+- Warm, retro feel with glowing text effects
+
+**Mockup 3b: Matrix Terminal** (`mockup-3b-terminal-matrix.html`)
+- Enhanced Matrix-style green with stronger glow effects
+- Sharp borders and intense text shadows
+- Cyber/hacker aesthetic
+
+**Mockup 3c: DOS Terminal** (`mockup-3c-terminal-dos.html`)
+- Retro DOS/blue-screen aesthetic
+- Blue background with cyan text
+- DOS-style commands (TYPE, DIR instead of cat, ls)
+- Double-line borders for classic PC look
+
 ## How to View
 
 ### Option 1: Open Directly in Browser
