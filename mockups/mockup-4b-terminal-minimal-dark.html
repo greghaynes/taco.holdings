@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco.holdings - Terminal (Minimal Dark)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Ubuntu Mono', 'Consolas', 'Monaco', monospace;
+            background: #300a24;
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 2rem;
+            line-height: 1.7;
+        }
+        
+        .terminal {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #300a24;
+            border: 1px solid #5e2750;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .terminal-header {
+            background: #2c001e;
+            padding: 0.5rem 1rem;
+            border-bottom: 1px solid #5e2750;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .terminal-button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .terminal-button:first-child {
+            background: #da4453;
+        }
+        
+        .terminal-button:nth-child(2) {
+            background: #fdbc4b;
+        }
+        
+        .terminal-button:nth-child(3) {
+            background: #27ae60;
+        }
+        
+        .terminal-title {
+            margin-left: auto;
+            color: #9f7092;
+            font-size: 0.85rem;
+        }
+        
+        .terminal-body {
+            padding: 1.5rem;
+        }
+        
+        .prompt {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 18px;
+            background: #ffffff;
+            animation: blink 1s infinite;
+            margin-left: 2px;
+        }
+        
+        @keyframes blink {
+            0%, 49% { opacity: 1; }
+            50%, 100% { opacity: 0; }
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            .cursor {
+                animation: none;
+                opacity: 1;
+            }
+        }
+        
+        .output {
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+        }
+        
+        .command {
+            margin-bottom: 1.5rem;
+        }
+        
+        .command-line {
+            margin-bottom: 0.5rem;
+        }
+        
+        .user {
+            color: #8ae234;
+        }
+        
+        .at {
+            color: #ffffff;
+        }
+        
+        .host {
+            color: #8ae234;
+        }
+        
+        .path {
+            color: #729fcf;
+        }
+        
+        .dollar {
+            color: #ffffff;
+        }
+        
+        .cmd-text {
+            color: #ffffff;
+        }
+        
+        a {
+            color: #729fcf;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #8ae234;
+        }
+        
+        ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        li {
+            margin-bottom: 0.3rem;
+        }
+        
+        li:before {
+            content: '• ';
+            color: #8ae234;
+        }
+        
+        .info {
+            color: #eeeeec;
+        }
+        
+        .highlight {
+            color: #8ae234;
+        }
+        
+        .footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #5e2750;
+            color: #5e2750;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="terminal-button"></div>
+            <div class="terminal-button"></div>
+            <div class="terminal-button"></div>
+            <div class="terminal-title">greg@taco: ~</div>
+        </div>
+        
+        <div class="terminal-body">
+            <div class="command">
+                <div class="command-line">
+                    <span class="user">greg</span><span class="at">@</span><span class="host">taco</span><span class="path">:~</span><span class="dollar">$ </span><span class="cmd-text">cat welcome.txt</span>
+                </div>
+                <div class="output">
+                    <p class="highlight">TACO.HOLDINGS</p>
+                    <p>Greg Haynes - Software Engineer</p>
+                    <p>Pacific Northwest</p>
+                </div>
+            </div>
+            
+            <div class="command">
+                <div class="command-line">
+                    <span class="user">greg</span><span class="at">@</span><span class="host">taco</span><span class="path">:~</span><span class="dollar">$ </span><span class="cmd-text">cat about.txt</span>
+                </div>
+                <div class="output">
+                    <p>My name is Greg Haynes, and I'm a Software Engineer living in the Pacific Northwest.</p>
+                    <p>I've participated in developing a few <a href="#projects">Open Source projects</a>, mostly related to Cloud and Internal Developer Platforms.</p>
+                </div>
+            </div>
+            
+            <div class="command">
+                <div class="command-line">
+                    <span class="user">greg</span><span class="at">@</span><span class="host">taco</span><span class="path">:~</span><span class="dollar">$ </span><span class="cmd-text">ls projects/</span>
+                </div>
+                <div class="output">
+                    <p class="info">Some of the Open Source projects I've made significant contributions to:</p>
+                    <ul>
+                        <li><a href="https://github.com/cnoe-io/idpbuilder">idpbuilder</a></li>
+                        <li><a href="https://knative.dev/docs/">Knative</a></li>
+                        <li><a href="https://www.openstack.org/">OpenStack</a></li>
+                        <li><a href="https://github.com/openstack/diskimage-builder">diskimage-builder</a></li>
+                        <li><a href="https://github.com/greghaynes/xsbs">Extensible Sauerbraten Server</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="command">
+                <div class="command-line">
+                    <span class="user">greg</span><span class="at">@</span><span class="host">taco</span><span class="path">:~</span><span class="dollar">$ </span><span class="cmd-text">ls navigation/</span>
+                </div>
+                <div class="output">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#projects">OSS Projects</a></li>
+                        <li><a href="#posts">Posts</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="prompt">
+                <span class="user">greg</span><span class="at">@</span><span class="host">taco</span><span class="path">:~</span><span class="dollar">$ </span><span class="cursor"></span>
+            </div>
+            
+            <div class="footer">
+                Mockup 4b: Minimal Terminal (Dark)
+            </div>
+        </div>
+    </div>
+</body>
+</html>

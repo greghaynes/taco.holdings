@@ -58,6 +58,33 @@ A developer-focused terminal interface with:
 - DOS-style commands (TYPE, DIR instead of cat, ls)
 - Double-line borders for classic PC look
 
+### Mockup 4: Clean Linux-Style Terminals
+Modern, clean terminal designs inspired by Linux distributions with both light and dark modes.
+
+**Mockup 4: Clean Terminal Dark** (`mockup-4-terminal-clean-dark.html`)
+- VS Code-inspired dark theme
+- Clean, readable design
+- Professional Linux-style prompt (user@host:~$)
+- Tree-style list markers (├─ └─)
+
+**Mockup 4a: Clean Terminal Light** (`mockup-4a-terminal-clean-light.html`)
+- Light theme with excellent readability
+- GNOME Terminal color palette
+- Same clean design as dark variant
+- Professional appearance
+
+**Mockup 4b: Minimal Terminal Dark** (`mockup-4b-terminal-minimal-dark.html`)
+- Ubuntu purple theme
+- Minimal, distraction-free design
+- Simple bullet-point lists
+- Warm purple background
+
+**Mockup 4c: Minimal Terminal Light** (`mockup-4c-terminal-minimal-light.html`)
+- Modern GNOME light theme
+- Clean white background
+- Green accent colors
+- Simple and elegant
+
 ## How to View
 
 ### Option 1: Open Directly in Browser
