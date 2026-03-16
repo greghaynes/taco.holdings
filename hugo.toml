@@ -1,17 +1,11 @@
 baseURL = 'https://taco.holdings/'
 languageCode = 'en-us'
 title = 'Taco.holdings'
-theme = 'maverick'
 
 [permalinks]
   pages = "/:slug"
 
 [menu]
-  [[menu.main]]
-    identifier = "oss-projects"
-    name = "OSS Projects"
-    url = "/open-source-projects"
-    weight = "-200"
   [[menu.main]]
     identifier = "posts"
     name = "Posts"
